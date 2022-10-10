@@ -1,11 +1,11 @@
-const text = "Ahmed";
-console.log(text);
-const inputs = document.querySelectorAll('input');
-console.log(inputs);
+let text = "Ahmed";
+let age = 24;
 
-inputs.forEach((input) => {
-    console.log(input);
-});
 
-// tsc sandbox.js -w 
-//to compile and watch js files
+// age = "fff"; type of variable cannot be changed
+//typescript is for checking types during development not in the run time
+const circle = ( diameter:number):number => {
+    return diameter * Math.PI
+};
+
+console.log(circle(7.5));
