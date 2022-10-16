@@ -1,16 +1,16 @@
 "use strict";
-const logDetails = (uid, item) => {
-    console.log(`${item} has a uid of ${uid}`);
+// let greet: Function;
+let greet;
+greet = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
 };
-const greet = (user) => {
-    console.log(`${user.name} says hello`);
+let calc;
+calc = (numberOne, numberTwo, action) => {
+    if (action == "add")
+        return numberOne + numberTwo;
+    return numberOne + numberTwo;
 };
-const greetAgain = (user) => {
-    console.log(`${user.name} says hello`);
-};
-const greetMore = (user) => {
-    console.log(`${user.name} says hello`);
-};
-const greetMoreAndMore = (user) => {
-    console.log(`${user.name} says hello`);
+let logDetails;
+logDetails = (human) => {
+    console.log(`${human.name} is ${human.age}`);
 };
