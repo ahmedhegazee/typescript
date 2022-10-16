@@ -1,14 +1,16 @@
 "use strict";
-let fn;
-fn = () => 'test';
-console.log(fn);
-//c? is optional
-const add = (a, b, c = 10) => {
-    console.log(a + b);
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-add(10, 5);
-const minus = (a, b) => {
-    return a - b;
+const greet = (user) => {
+    console.log(`${user.name} says hello`);
 };
-let result = minus(10, 5);
-// result="dasdsad"//error
+const greetAgain = (user) => {
+    console.log(`${user.name} says hello`);
+};
+const greetMore = (user) => {
+    console.log(`${user.name} says hello`);
+};
+const greetMoreAndMore = (user) => {
+    console.log(`${user.name} says hello`);
+};
