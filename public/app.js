@@ -9,7 +9,16 @@ const type = document.querySelector("#type");
 const tofrom = document.querySelector("#tofrom");
 const details = document.querySelector("#details");
 const amount = document.querySelector("#amount");
+//access modifiers => public , private readonly
 class Invoice {
+    //  client: string;
+    // details: string;
+    // amount: number;
+    // constructor(client: string, details: string, amount: number) {
+    //     this.client = client;
+    //     this.details = details;
+    //     this.amount = amount;
+    // }
     constructor(client, details, amount) {
         this.client = client;
         this.details = details;
@@ -31,4 +40,5 @@ const invoice2 = new Invoice('Khaled', 'personal website', 350);
 invoices.push(invoice1);
 invoices.push(invoice2);
 console.log(invoices);
+console.log(invoice1.client);
 //classes
